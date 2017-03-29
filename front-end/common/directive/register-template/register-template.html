@@ -1,0 +1,44 @@
+<div id="contentContainer" class="container">
+  <div class="row">
+    <div id="realContent" class="col-xs-12">
+      <br> <br>
+      <div class="row">
+        <section class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-12 col-sm-offset-0">
+          <div class="well well-lg">
+            <div class="row">
+              <div class="col-sm-3 col-xs-0 "></div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <form >
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user-secret icon-2x"></i></i></span>
+                        <input  class="form-control input-lg" ng-model="user.name"  placeholder="Full Name" maxlength="100" type="text" name="name">
+                      </div><p>{{msg.name}}</p><br>
+
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="icon-user icon-2x"></i></span>
+                        <input  class="form-control input-lg" ng-model="user.username"  placeholder="Username" maxlength="100" type="text" name="handle">
+                      </div><p>{{msg.username}}</p><br>
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="icon-envelope icon-2x"></i></span>
+                        <input  class="form-control input-lg" ng-model="user.email"  placeholder="Email" maxlength="100" type="email" name="email" >
+                      </div><p>{{msg.email}}</p><br>
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="icon-asterisk icon-2x"></i></span>
+                        <input  class="form-control input-lg" ng-model="user.password" placeholder="Password" maxlength="60" type="password" name="password">
+                      </div><p>{{msg.password}}</p><br>
+                      <div class="form-group">
+                        <button type="submit"  ng-click="registerUser()" class="btn btn-block btn-primary btn-lg">Sign Up</button>
+                      </div><br>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
