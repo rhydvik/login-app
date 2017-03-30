@@ -21,6 +21,9 @@ angular.module('common').directive('loginTemplate',['$http','$state','$window', 
                 console.log(response);
                 if (response.data.user === 'valid') {
                   $state.go('profile');
+                  $window.localStorage.setItem('token',response.data.token);
+                  $window.localStorage.setItem('name',response.data.name);
+                  $window.localStorage.setItem('email',response.data.email);
                 }
                 else {
                   scope.msg = "User Not registered/Invalid Credentials";
